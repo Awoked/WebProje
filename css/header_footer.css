@@ -1,0 +1,295 @@
+#headercontainer{
+    width: 100%;
+    height: 80px;
+    background-color: #10172b;
+    position: fixed;
+    z-index: 300;
+    top: 0;
+    left: 0;
+}
+#header{
+    margin: auto;
+    width: 1358px;
+    height: 80px;
+    background-color: #10172b;
+}
+.leftside{
+    width: 50%;
+    height: 100%;
+    float: left;
+    
+}
+.rightside{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.menu .menu_ust{
+    height: 10%;
+    width: 400px;
+    list-style-type: none;
+    margin: 30px 20px 0px 140px;
+}
+.menu .menu_ust .menu_ust_li{
+    float: left;
+    margin: 0px 20px 0px 0px;
+    list-style: none;
+}
+.menu .menu_ust .menu_ust_li .ust_menu_a{
+    text-decoration: none;
+    color: white;
+}
+.child_menu{
+    list-style-type: none;
+    clear: both;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 48px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-radius: 0 0 10px 10px;
+    transition: height 0.1s ease;
+    height: 0px;
+    width: 75px;
+    background-color: #161f3a;
+}
+.child_menu li{
+    display: none;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.child_menu li a{
+    color: white;
+    
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    text-decoration: none;
+}
+.child_menu li a:hover{
+    color: #daeaf6;
+    border-bottom: 2px solid white;
+    border-radius: 0 0 2px 2px;
+    transition: transform 250ms ease-in-out;
+    transform: scaleX(1);
+}
+.menu_ust li:nth-child(2):hover ul{
+    
+    height: 75px;
+    transition: height 0.1s ease;
+    display: block;
+}
+.menu_ust .menu_ust_li:hover li{
+    display: block;
+}
+#logo{
+    margin: 2px 15px 0px 30px;
+    float: left;
+    width: 75px;
+    height: 75px;
+    background: url(../images/Logo.png);
+    background-size: 100%;
+}
+#searchbar{
+    float: left;
+    margin: 20px 0px 0px 0px ;
+    width: 200px;
+    height: 35px;
+    background-color: black;
+}
+#searchbar input{
+    border: 0;
+    box-shadow: none;
+    outline-offset: 0px;
+    outline: none;
+    background-color: #daeaf6;
+    font-size: 18px;
+    width: 200px;
+    transition: 0.3s;
+    height: 35px;
+    animation-name: searchbar_Size;
+    animation-duration: 1s;
+}
+#searchbar input:focus{
+    width: 500px;
+    transition: 0.5s;
+    box-shadow: none;
+    outline-offset: 0px;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.account{
+    box-shadow: 3px 3px 5px;
+    border-radius: 5px;
+    margin-top: -5px;
+    margin-left: 50px;
+    float: left;
+    background-color: #a4152c;
+    width: 32px;
+    height: 32px;
+}
+.account img{
+    width: 32px;
+    height: 32px;
+}
+.account .login_register_section{
+    
+    position: relative;
+    z-index: 30;
+    width: 250px;
+    transition: height 1s ease;
+    right: 215px;
+    top: 18px;
+    height: 0px;
+    overflow:visible;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: height 1s ease;
+    background-color: #161f3a;
+}
+.account:hover .login_register_section{
+
+    height: 300px;
+    transition: 0.5s ease;
+    display: block;
+}
+.login_register_section .topside{
+    box-sizing: border-box;
+    width: 100%;
+    height: 0px;
+    transition: height 1s ease;
+}
+.account:hover .topside{
+    height: 200px;
+    padding-top: 40px;
+    transition: 0.5s ease;
+    display: block;
+}
+.login_register_section .bottomside {
+    width: 100%;
+    height: 0px;
+    transition: height 1s ease;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.bottomside a{
+    text-decoration: none;
+}
+.account:hover .bottomside{
+    height: 100px;
+    transition: 0.5s ease;
+}
+.menu .menu_ust .menu_ust_li:hover .ust_menu_a{
+    color: #daeaf6;
+    border-bottom: 2px solid white;
+    border-radius: 0 0 2px 2px;
+    cursor:url(../images/onclick.cur),auto;
+}
+.account:hover a{
+    cursor:url(../images/onclick.cur),auto;
+}
+.account_display{
+    display: none;
+}
+.login_register_section:hover .account_display{
+    display: block;
+}
+.account:hover .account_display{
+    display: block;
+}
+#username{
+    width: 80%;
+    margin: 5px auto;
+}
+.usernamediv{
+    margin:  0px 0px 0px 20px;
+    font-weight: bold;
+    color: white;
+}
+#password{
+    width: 80%;
+    margin: 5px auto;
+}
+.passworddiv{
+    color: white;
+    margin: 20px 0px 0px 20px;
+    font-weight: bold;
+}
+.account_button_types {
+    font-size: 16px;
+    transition: 0.3s;
+    color: white;
+    background-color: #a4152c;
+    border: none;
+    height: 35px;
+    border-radius: 2px;
+    font-weight: bold;
+    width: 80%;
+    margin-left: 25px;
+}
+.account_button_types:last-child{
+    
+    margin-top: 20px;
+}
+.account_button_types:hover{
+    color: black;
+    border: 3px solid #a4152c;
+    background-color: white;
+    transition: 0.5s;
+    cursor:  url(../images/cursor.png),auto;
+}
+.account_button_types:focus{
+    color: white;
+    border: 1px solid black;
+    background-color: #a4156c;
+    transition: 0.1s;
+    cursor: url(../images/onclick.cur),auto;
+}
+#footer{
+    left: 0;
+    position: absolute;
+    height: 90px;
+    background-color: #242424;
+    width: 100%;
+}
+#infooter{
+    width: 1300px;
+    height: 100%;
+    margin: auto;
+}
+.footerLeftSide{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.footerRightSide{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.fa{
+    transition: 0.1s;
+    margin-top: 15px;
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    width: 50px;
+    text-align: center;
+}
+.footerLeftSide a{
+    font-size: 30px;
+    float: left;
+}
+.fa:hover{
+    transition: 0.1s;
+    opacity: 0.7;
+    transform: rotate(-15deg);
+    margin-top: -5px;
+}
+.footerRightSide span{
+    margin-top: 15px;
+    color: white;
+    float: right;
+}

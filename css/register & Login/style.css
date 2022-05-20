@@ -1,0 +1,73 @@
+#container{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 113px;
+    margin-bottom: 100px;
+    width: 400px;
+    height: 500px;
+}
+.username_passwrd_section{
+    padding-top: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 325px;
+}
+.register_site_input_type input{
+    width: 100px;
+    height: 20px;
+    border-radius: 100px;
+    border: 0;
+    margin: 0px 150px 25px;
+    text-align: center;
+    transition: 0.3s ;
+}
+.register_site_label_type{
+    text-align: center;
+    margin: 15px 0px 3px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.register_site_input_type input:focus{
+    transition: 0.3s;
+    width: 200px;
+    margin: 0 100px 25px;
+}
+.button_section{
+    width: 100%;
+    height: 175px;
+    text-align: center;
+}
+.button_section input{
+    width: 180px;
+    height: 45px;
+    margin: 50px 110px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    color: white;
+    background-color: #a4152c;
+    font-weight: bold;
+    font-size: 17px;
+    border: 1px solid black;
+}
+.button_section input:hover{
+    transition: 0.3s;
+    color: black;
+    border: 3px solid #a4152c;
+    background-color: white;
+}
+.button_section input:focus{
+    transition: 0.2s;
+    color: white;
+    border: 1px solid black;
+    background-color: #a4156c;
+}
+.button_section a{
+    transition: 0.1s;
+    color: #d9d9d9;
+    
+}
+.button_section a:hover{
+    transition: 0.1s;
+    color: #FFF;
+}

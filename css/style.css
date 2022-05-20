@@ -1,0 +1,343 @@
+body{
+  overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    background: url(../images/background.png),linear-gradient(90deg, rgba(133,28,25,1) 0%, rgba(191,71,70,1) 50%, rgba(133,28,25,1) 100%);
+    background-repeat: repeat-x;
+    background-size:80%;
+    cursor: url(../images/cursor.png),auto;
+    @media screen and (min-width:1024px) {
+        /* ... */
+    }
+}
+#container{
+    clear: both;
+    width: 1300px;
+    height: 1100px;
+    margin: 0 auto 20px;
+    background-color: #10172b;
+    border-radius: 0 0 10px 10px;
+}
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #424242;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #10176c;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #10172b;
+  }
+#slider_populeranimeler{
+  width: 1300px;
+  height: 300px;
+  margin: 90px auto 20px;
+}
+.sliderpopulartopside{
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  font-weight: bold;
+  height: 35px;
+  background-color: #10172b;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+.sliderpopulartopside h2{
+  color: #FFF;
+}
+#slider{
+  animation: slideranim 2s infinite reverse;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 300px;
+  background: url(../images/noslider.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 30%;
+  margin-bottom: 20px;
+}
+.mainLeftSide{
+  background-color: #10172b;
+  float: left;
+  width: 100%;
+  height: 1100px;
+  border-radius: 0px 0px 10px 10px;
+}
+.duplicate{
+  transform: scale(90%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px black;
+  margin: 30px 4px 30px 5px;
+  float: left;
+  width: 420px;
+  height: 200px;
+  background-color: #1e1e26;
+}
+
+.animeLeftSide{
+  float: left;
+  margin: 10px 5px 10px 10px;
+  width: 140px;
+  height: 90%;
+  border-right: 1px solid black;
+}
+.animeRightSide{
+  float: left;
+  margin: 10px;
+  width: 235px;
+  height: 90%;
+}
+.sliderpopularanimes{
+  width: 1300px;
+  height: 270px;
+  background-color: blue;
+}
+.sliderContainer{
+  padding: 10px;
+  box-sizing: border-box;
+  width: 1300px;
+  height: 270px;
+  background-color: #a4152c;
+}
+.sliderBox{
+  float: left;
+  margin-right: 20px;
+  width: 200px;
+  height: 250px;
+  background-color: #1e1e26;
+  border-radius: 10px;
+  box-shadow: 2px 10px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.sliderAnimeler{
+  height: 240px;
+  max-height: 100%;
+  max-width: 100%;
+  margin: 5px 20px;
+  border-radius: 5px;
+}
+.animeLeftSide img{
+  height: 100%;
+  box-shadow: 5px 5px  10px black , -5px -5px 10px black;
+}
+.duplicate:hover{
+  transition: 0.1s;
+  transform: scale(100%);
+}
+.specialberkeBack:hover{
+  transition: 0.1s;
+  transform: scale(100%);
+}
+.sliderBox:hover{
+  transition: 0.1s;
+  transform: scale(102%);
+}
+.animeRightSide_upperText{
+  width: 100%;
+  height: 20%;
+  padding: 10px 10px 10px 0px;
+  box-sizing: border-box;
+}
+.animeRightSide_upperText a{
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.animeRightSide_bottomText{
+  width: 100%;
+  height: 80%;
+}
+.animeRightSide_bottomLeftText{
+  padding-top: 30px;
+  box-sizing: border-box;
+  color: #d4d4d4;
+  float: left;
+  width: 30%;
+  height: 100%;
+}
+.animeRightSide_bottomRightText{
+  padding-top: 30px;
+  box-sizing: border-box;
+  color: #d4d4d4;
+  float: left;
+  width: 70%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.animeRightSide_upperText a{
+  color: #d4d4d4;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+.animeRightSide_upperText a:hover{
+  color: #fff;
+}
+.specialberke{
+  border-radius: 10px;
+  width: 415px;
+  height: 195px;
+  margin: 2px;
+  background-color: #1e1e26;
+}
+.specialberkeBack{
+  border: 1px solid transparent;
+  transform: scale(90%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px black;
+  margin: 30px 4px 30px 5px;
+  float: left;
+  width: 420px;
+  height: 200px;
+  background: linear-gradient(
+    124deg, 
+    #ff2400,
+     #e81d1d,
+      #e8b71d,
+       #e3e81d,
+        #1de840,
+         #1ddde8,
+          #2b1de8,
+           #dd00f3,
+            #dd00f3
+            );
+  background-size: 1800% 1800%;
+  -webkit-animation: rainbow 3.5s ease infinite;
+  -z-animation: rainbow 3.5s ease infinite;
+  -o-animation: rainbow 3.5s ease infinite;
+  animation: rainbow 3.5s ease infinite;
+}
+@keyframes berkepasha{
+  0%{ transform: rotate(5deg) scale(100%);}
+  50%{ transform: rotate(40deg) scale(80%);}
+  100%{ transform: rotate(5deg) scale(100%);}
+}
+
+@-webkit-keyframes rainbow {
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+.nyancat{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background: url(../images/NYAN_CAT.webp);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  animation: loading 5s normal forwards;
+}
+@keyframes loading{
+  from{left: -1000px;}
+  to{left: 12000px; }
+}
+.randombackground{
+  position: fixed;
+  top: 80px;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 90%;
+}
+.randomAnimeContainerMaker{
+  position: fixed;
+  z-index: 400;
+  top: 80px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; 
+}
+.randomanime{
+  transition: 0.2s ease;
+  margin-top: -150px;
+  width: 400px;
+  height: 500px;
+  background-color: #1e1e26;
+  border-radius: 10px; 
+  z-index: 600;
+  animation: drop 1s; 
+}
+@keyframes drop{
+  from{ margin-top: 1800px;}
+  to{ margin-top: -150px;}
+}
+.randomanime:hover{
+  transition: 0.3s ease;
+  transform: scale(108%);
+}
+.randomanime_top{
+  width: 100%;
+  height: 400px;
+  background: #a4152c;
+  background-size:320%;
+  border-radius: 10px 10px 0 0;
+}
+.randomanime_top img{
+  margin: 10px 70px;
+  height: 380px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px blue ,0 0 15px blue;
+}
+.randomanime_top img:hover{
+  transition: 0.3s ease;
+  transform: scale(104%);
+}
+.randomanime_bottom{
+  width: 100%;
+  height: 100px;
+  border-radius: 0px 0px 10px 10px;
+  padding: 20px 0px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.randomanime_bottom a{
+  font-size: 24px;
+  color: white;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+.randomanime_bottom a:hover{
+  transition: 0.3s ease;
+  opacity: 70%;
+}

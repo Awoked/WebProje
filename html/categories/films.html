@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rōzu</title>
+        <link rel="shortcut icon" type="image/x-icon" href="../../images/Logo.png" />
+        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="../../css/lightslider.css">
+        <link rel="stylesheet" href="../../css/header_footer.css">
+        <script type="text/javascript" src="../../js/Jquery.js"></script>
+        <script type="text/javascript" src="../../js/lightslider.js"></script>
+        <script src="../../js/script.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/d06050b33e.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--COPYPASTA-->
+        <div id="headercontainer">
+            <div id="header">
+                <div class="leftside">
+                    <a href="../../index.html"><div id="logo"></div></a>
+                    <div id="searchbar">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="rightside">
+                    <div class="menu">
+                        <ul class="menu_ust">
+                            <li class="menu_ust_li"><a href="../../index.html" class="ust_menu_a">Animeler</a></li>
+                            <li class="menu_ust_li"><a href="" class="ust_menu_a">Kategoriler</a>
+                                <ul class="child_menu">
+                                    <li><a href="tv_series.html" >Tv Serisi</a></li>
+                                    <li><a href="films.html" >Film</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu_ust_li"><a href="../about/about.html" class="ust_menu_a">Hakkında</a></li>
+                            <li class="menu_ust_li"><a href="#" class="ust_menu_a" onclick="uret(1,16)">Rastgele</a></li>
+                            <li class="menu_ust_li"><a href="../contact/contact.html" class="ust_menu_a">İletişim</a></li>
+                        </ul>
+                    </div>
+                    <div class="account">
+                        <a href="../login_register/login.html"><img src="../../images/accounticon.png" alt=""></a>
+                        <div class="login_register_section col-md-">
+                            <div class="topside">
+                                <span class="account_display usernamediv"><label for="username">Kullanıcı Adı</label></span>
+                                <input type="text" name="username" id="username" class="account_display" required maxlength="14">
+                                <div class="account_display passworddiv"><label for="password">Şifre</label></div>
+                                <input type="password" name="password" id="password" class="account_display " required maxlength="11">
+                            </div>
+                            <div class="bottomside">
+                                <input type="submit" class="account_button_types account_display" value="Giriş">
+                                <a href="../../html/login_register/register.html"><button class="account_button_types account_display">Kayıt Ol</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="randomAnimeBackground"></div>
+        <div id="randomAnimeContainer"></div>
+        <!--COPYPASTA-->
+        <div id="slider_populeranimeler">
+            <div class="sliderpopulartopside"><h2>Popüler Animeler</h2></div>
+            <div class="sliderpopularanimes">
+                <div class="sliderContainer">
+                        <ul id="autoWidth" class="cs-hidden">
+                            <li class="item-a">         
+                                <div class="sliderBox">
+                                    <a href="../animeler/Attack_On_Titan/AOT_Bolum_1.html"><img src="../../images/AOT/AttackOnTitan.jpg" class="sliderAnimeler" alt=""></a>
+                                </div>
+                            </li>
+                            <li class="item-a">         
+                                <div class="sliderBox">
+                                    <a href="#"><img src="../../images/Demon Slayer/MV5BZjZjNzI5MDctY2Y4YS00NmM4LTljMmItZTFkOTExNGI3ODRhXkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_.jpg" class="sliderAnimeler" alt=""></a>
+                                </div>
+                            </li>
+                            <li class="item-a">         
+                                <div class="sliderBox">
+                                    <a href="#"><img src="../../images/MY HERO ACADEMİA/MV5BNTk1NTc0MTYtY2IyNC00OWVjLWJhYWItNDQ0ODdiNWZkYTA5XkEyXkFqcGdeQXVyMTQ3MjMyMTYz._V1_FMjpg_UX1000_.jpg" class="sliderAnimeler" alt=""></a>
+                                </div>
+                            </li>
+                            <li class="item-a">         
+                                <div class="sliderBox">
+                                    <a href="#"><img src="../../images/Viloet evergarden/images.jpg" class="sliderAnimeler" alt=""></a>
+                                </div>
+                            </li>
+                            <li class="item-a">         
+                                <div class="sliderBox">
+                                    <a href="#"><img src="../../images/Given/71c1-xwd-pl.jpg" class="sliderAnimeler" alt=""></a>
+                                </div>
+                            </li>
+                            <li class="item-a">         
+                                <div class="sliderBox">
+                                    <a href="#"><img src="../../images/One Piece/MV5BODcwNWE3OTMtMDc3MS00NDFjLWE1OTAtNDU3NjgxODMxY2UyXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg" class="sliderAnimeler" alt=""></a>
+                                </div>
+                            </li>
+                            <li class="item-a">         
+                                <div class="sliderBox">
+                                    <a href="#"><img src="../../images/Naruto/MV5BZmQ5NGFiNWEtMmMyMC00MDdiLTg4YjktOGY5Yzc2MDUxMTE1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg" class="sliderAnimeler" alt=""></a>
+                                </div>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="slider"></div>
+        <div id="container">
+            <div class="main">
+                <div class="mainLeftSide">
+                    <h2 style="color: white; font-weight: bold;  margin: 10px 20px 0px;">Kategori > <sub>Filmler</sub></h2>
+                    <div class="duplicate anime1">
+                        <div class="animeLeftSide"><a href="../animeler/Attack_On_Titan/AOT_Bolum_1.html"><img src="../../images/Howls Moving Castle/MV5BNmM4YTFmMmItMGE3Yy00MmRkLTlmZGEtMzZlOTQzYjk3MzA2XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg"  alt=""></a></div>
+                        <div class="animeRightSide">
+                            <div class="animeRightSide_upperText"><a href="../animeler/Attack_On_Titan/AOT_Bolum_1.html">Howl's Moving Castle</a></div>
+                            <div class="animeRightSide_bottomText">
+                                <div class="animeRightSide_bottomLeftText">
+                                    Durum:
+                                    <br><br>
+                                    Yayımcı:
+                                    <br><br>
+                                    Stüdyo:
+                                </div>
+                                <div class="animeRightSide_bottomRightText">
+                                    <span style="color: red; font-weight: bold; font-size: 16;">Bitti</span>
+                                    <br><br>
+                                    Studio Ghibli
+                                    <br><br>
+                                    Studio Ghibli /	DENTSU Music And Entertainment
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="duplicate anime1">
+                        <div class="animeLeftSide"><a href="../animeler/Attack_On_Titan/AOT_Bolum_1.html"><img src="../../images/Violet Evergarden Movie/images.jpg"  alt=""></a></div>
+                        <div class="animeRightSide">
+                            <div class="animeRightSide_upperText"><a href="../animeler/Attack_On_Titan/AOT_Bolum_1.html">Violet Evergarden: The Movie</a></div>
+                            <div class="animeRightSide_bottomText">
+                                <div class="animeRightSide_bottomLeftText">
+                                    Durum:
+                                    <br><br>
+                                    Yayımcı:
+                                    <br><br>
+                                    Stüdyo:
+                                </div>
+                                <div class="animeRightSide_bottomRightText">
+                                    <span style="color: red; font-weight: bold; font-size: 16;">Bitti</span>
+                                    <br><br>
+                                    Studio Ghibli
+                                    <br><br>
+                                    Studio Ghibli /	DENTSU Music And Entertainment
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="duplicate anime1">
+                        <div class="animeLeftSide"><a href="../animeler/Attack_On_Titan/AOT_Bolum_1.html"><img src="../../images/Kimi no na wa/583827.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg"  alt=""></a></div>
+                        <div class="animeRightSide">
+                            <div class="animeRightSide_upperText"><a href="../animeler/Attack_On_Titan/AOT_Bolum_1.html">Your Name</a></div>
+                            <div class="animeRightSide_bottomText">
+                                <div class="animeRightSide_bottomLeftText">
+                                    Durum:
+                                    <br><br>
+                                    Yayımcı:
+                                    <br><br>
+                                    Stüdyo:
+                                </div>
+                                <div class="animeRightSide_bottomRightText">
+                                    <span style="color: red; font-weight: bold; font-size: 16;">Bitti</span>
+                                    <br><br>
+                                    Studio Ghibli
+                                    <br><br>
+                                    Studio Ghibli /	DENTSU Music And Entertainment
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="duplicate anime1">
+                        <div class="animeLeftSide"><a href="../animeler/Attack_On_Titan/AOT_Bolum_1.html"><img src="../../images/Chuunibyou demo Koi ga Shitai Movie Take On Me/images.jpg"  alt=""></a></div>
+                        <div class="animeRightSide">
+                            <div class="animeRightSide_upperText"><a href="../animeler/Attack_On_Titan/AOT_Bolum_1.html">Chuunibyou demo Koi ga Shitai! Movie: Take On Me </a></div>
+                            <div class="animeRightSide_bottomText">
+                                <div class="animeRightSide_bottomLeftText">
+                                    Durum:
+                                    <br><br>
+                                    Yayımcı:
+                                    <br><br>
+                                    Stüdyo:
+                                </div>
+                                <div class="animeRightSide_bottomRightText">
+                                    <span style="color: red; font-weight: bold; font-size: 16;">Bitti</span>
+                                    <br><br>
+                                    Studio Ghibli
+                                    <br><br>
+                                    Studio Ghibli /	DENTSU Music And Entertainment
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="duplicate anime1">
+                        <div class="animeLeftSide"><a href="../animeler/Attack_On_Titan/AOT_Bolum_1.html"><img src="../../images/Josee to Tora to Sakana-tachi/images.jpg"  alt=""></a></div>
+                        <div class="animeRightSide">
+                            <div class="animeRightSide_upperText"><a href="../animeler/Attack_On_Titan/AOT_Bolum_1.html">Josee to Tora to Sakana-tachi</a></div>
+                            <div class="animeRightSide_bottomText">
+                                <div class="animeRightSide_bottomLeftText">
+                                    Durum:
+                                    <br><br>
+                                    Yayımcı:
+                                    <br><br>
+                                    Stüdyo:
+                                </div>
+                                <div class="animeRightSide_bottomRightText">
+                                    <span style="color: red; font-weight: bold; font-size: 16;">Bitti</span>
+                                    <br><br>
+                                    Studio Ghibli
+                                    <br><br>
+                                    Studio Ghibli /	DENTSU Music And Entertainment
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="duplicate anime1">
+                        <div class="animeLeftSide"><a href="../animeler/Attack_On_Titan/AOT_Bolum_1.html"><img src="../../images/Jujutsu Kaisen Movie 0/images.jpg"  alt=""></a></div>
+                        <div class="animeRightSide">
+                            <div class="animeRightSide_upperText"><a href="../animeler/Attack_On_Titan/AOT_Bolum_1.html">Jujutsu Kaisen Movie 0</a></div>
+                            <div class="animeRightSide_bottomText">
+                                <div class="animeRightSide_bottomLeftText">
+                                    Durum:
+                                    <br><br>
+                                    Yayımcı:
+                                    <br><br>
+                                    Stüdyo:
+                                </div>
+                                <div class="animeRightSide_bottomRightText">
+                                    <span style="color: red; font-weight: bold; font-size: 16;">Bitti</span>
+                                    <br><br>
+                                    Studio Ghibli
+                                    <br><br>
+                                    Studio Ghibli /	DENTSU Music And Entertainment
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="duplicate anime1">
+                        <div class="animeLeftSide"><a href="../animeler/Attack_On_Titan/AOT_Bolum_1.html"><img src="../../images/Kimetsu no Yaiba Movie Mugen Resshahen/licensed-image.jpg"  alt=""></a></div>
+                        <div class="animeRightSide">
+                            <div class="animeRightSide_upperText"><a href="../animeler/Attack_On_Titan/AOT_Bolum_1.html">Kimetsu no Yaiba Movie: Mugen Ressha-hen</a></div>
+                            <div class="animeRightSide_bottomText">
+                                <div class="animeRightSide_bottomLeftText">
+                                    Durum:
+                                    <br><br>
+                                    Yayımcı:
+                                    <br><br>
+                                    Stüdyo:
+                                </div>
+                                <div class="animeRightSide_bottomRightText">
+                                    <span style="color: red; font-weight: bold; font-size: 16;">Bitti</span>
+                                    <br><br>
+                                    Studio Ghibli
+                                    <br><br>
+                                    Studio Ghibli /	DENTSU Music And Entertainment
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="duplicate anime1">
+                        <div class="animeLeftSide"><a href="../animeler/Attack_On_Titan/AOT_Bolum_1.html"><img src="../../images/Kimi no Suizou wo Tabetai/images.jpg"  alt=""></a></div>
+                        <div class="animeRightSide">
+                            <div class="animeRightSide_upperText"><a href="../animeler/Attack_On_Titan/AOT_Bolum_1.html">Kimi no Suizou wo Tabetai</a></div>
+                            <div class="animeRightSide_bottomText">
+                                <div class="animeRightSide_bottomLeftText">
+                                    Durum:
+                                    <br><br>
+                                    Yayımcı:
+                                    <br><br>
+                                    Stüdyo:
+                                </div>
+                                <div class="animeRightSide_bottomRightText">
+                                    <span style="color: red; font-weight: bold; font-size: 16;">Bitti</span>
+                                    <br><br>
+                                    Studio Ghibli
+                                    <br><br>
+                                    Studio Ghibli /	DENTSU Music And Entertainment
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="duplicate anime1">
+                        <div class="animeLeftSide"><a href="../animeler/Attack_On_Titan/AOT_Bolum_1.html"><img src="../../images/Koe no Katachi/MV5BZGRkOGMxYTUtZTBhYS00NzI3LWEzMDQtOWRhMmNjNjJjMzM4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_QL75_UY281_CR3,0,190,281_.jpg"  alt=""></a></div>
+                        <div class="animeRightSide">
+                            <div class="animeRightSide_upperText"><a href="../animeler/Attack_On_Titan/AOT_Bolum_1.html">Koe no Katachi</a></div>
+                            <div class="animeRightSide_bottomText">
+                                <div class="animeRightSide_bottomLeftText">
+                                    Durum:
+                                    <br><br>
+                                    Yayımcı:
+                                    <br><br>
+                                    Stüdyo:
+                                </div>
+                                <div class="animeRightSide_bottomRightText">
+                                    <span style="color: red; font-weight: bold; font-size: 16;">Bitti</span>
+                                    <br><br>
+                                    Studio Ghibli
+                                    <br><br>
+                                    Studio Ghibli /	DENTSU Music And Entertainment
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="duplicate anime1">
+                        <div class="animeLeftSide"><a href="../animeler/Attack_On_Titan/AOT_Bolum_1.html"><img src="../../images/toubun no Hanayome Movie/122516.jpg"  alt=""></a></div>
+                        <div class="animeRightSide">
+                            <div class="animeRightSide_upperText"><a href="../animeler/Attack_On_Titan/AOT_Bolum_1.html">toubun no Hanayome Movie </a></div>
+                            <div class="animeRightSide_bottomText">
+                                <div class="animeRightSide_bottomLeftText">
+                                    Durum:
+                                    <br><br>
+                                    Yayımcı:
+                                    <br><br>
+                                    Stüdyo:
+                                </div>
+                                <div class="animeRightSide_bottomRightText">
+                                    <span style="color: red; font-weight: bold; font-size: 16;">Bitti</span>
+                                    <br><br>
+                                    Studio Ghibli
+                                    <br><br>
+                                    Studio Ghibli /	DENTSU Music And Entertainment
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="duplicate anime1">
+                        <div class="animeLeftSide"><a href="../animeler/Attack_On_Titan/AOT_Bolum_1.html"><img src="../../images/Suzume no Tojimari/Suzume-no-Tojimari-key-visual-805x1140.jpg"  alt=""></a></div>
+                        <div class="animeRightSide">
+                            <div class="animeRightSide_upperText"><a href="../animeler/Attack_On_Titan/AOT_Bolum_1.html">Suzume no Tojimari </a></div>
+                            <div class="animeRightSide_bottomText">
+                                <div class="animeRightSide_bottomLeftText">
+                                    Durum:
+                                    <br><br>
+                                    Yayımcı:
+                                    <br><br>
+                                    Stüdyo:
+                                </div>
+                                <div class="animeRightSide_bottomRightText">
+                                    <span style="color: red; font-weight: bold; font-size: 16;">Bitti</span>
+                                    <br><br>
+                                    Studio Ghibli
+                                    <br><br>
+                                    Studio Ghibli /	DENTSU Music And Entertainment
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="duplicate anime1">
+                        <div class="animeLeftSide"><a href="../animeler/Attack_On_Titan/AOT_Bolum_1.html"><img src="../../images/Sword Art Online Movie Ordinal Scale/f84f16a8e42f9827664b791f7bbd914c48be7f9245d0805af71d744de354d9ee._RI_V_TTW_.jpg"  alt=""></a></div>
+                        <div class="animeRightSide">
+                            <div class="animeRightSide_upperText"><a href="../animeler/Attack_On_Titan/AOT_Bolum_1.html">Sword Art Online Movie Ordinal Scale</a></div>
+                            <div class="animeRightSide_bottomText">
+                                <div class="animeRightSide_bottomLeftText">
+                                    Durum:
+                                    <br><br>
+                                    Yayımcı:
+                                    <br><br>
+                                    Stüdyo:
+                                </div>
+                                <div class="animeRightSide_bottomRightText">
+                                    <span style="color: red; font-weight: bold; font-size: 16;">Bitti</span>
+                                    <br><br>
+                                    Studio Ghibli
+                                    <br><br>
+                                    Studio Ghibli /	DENTSU Music And Entertainment
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--COPYPASTA-->    
+        <div id="footer">
+            <div id="infooter">
+                <!--Font awesome kullanarak icon eklendi-->
+                <div class="footerLeftSide">
+                    <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
+                    <a href="https://www.instagram.com" target="_blank" class="fa fa-brands fa-instagram"></a>
+                    <a href="https://discord.gg/ypDrj7zyRy" target="_blank" class="fa fa-brands fa-discord"></a>
+                </div>
+                <div class="footerRightSide">
+                    <span>&copy; 2022 AniRōzu</span>
+                </div>
+            </div>
+        </div>
+        <!--COPYPASTA-->
+    </body>
+    <script type="text/javascript" src="../../js/RandomAnimeGenerator/randomizerAlt1.js"></script>
+</html>
